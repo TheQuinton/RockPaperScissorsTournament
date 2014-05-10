@@ -1,6 +1,6 @@
 package tournament;
 /*	Group: Foxtrot
- *  Group Members:  Quinton Schafer, Homare Takase, Olivia Restivo, Dennis Vovra, Paul James
+ *  Group Members:  Quinton Schafer, Homare Takase
  *	Instructions: save files will be saved as 'playername'.txt, to load existing players place save files in the containing folder
  */	
 import java.util.ArrayList;
@@ -92,7 +92,7 @@ public class Tournament {
 		player = round.getNewPlayerStats();
 		return round.getLoser();	//returns the winner of the round
 	}
-	public static void endGameResults(){	//I'm making a fucking chart
+	public static void endGameResults(){	//table of stats
 		//For spacing use: String.format("%1$-" + 15 + "s", text); where 15 is the number of spaces
 		System.out.println("Names          | Games Won | Games Played | Matches Won | Matches Played | Forfeits | Tournaments Won | Tournaments Played");
 		for (int i = 0; i < numberOfPlayers; i++) {

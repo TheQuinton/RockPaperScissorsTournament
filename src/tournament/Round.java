@@ -31,7 +31,7 @@ public class Round {
 			System.out.print(allPlayers.get(secondPlayerNumber).getName() + " > ");
 			randomizeInputs(secondPlayerValid);
 			analyzeInputs(getPlayerInputs());
-			humanhuman();	//had to keep something from the other group --> most descriptive name for a method
+			rockPaperScissors();
 		}
 		allPlayers.get(firstPlayerNumber).setMatchesPlayed();	//adds to the number of matches that the player has played
 		allPlayers.get(secondPlayerNumber).setMatchesPlayed();
@@ -129,7 +129,7 @@ public class Round {
 			}
 		}
 	}
-	public void humanhuman(){
+	public void rockPaperScissors(){
 		//check for time game
 		if (firstPlayerInput.equals(secondPlayerInput)) {	//tie game scenario
 			System.out.println("TIE GAME");
